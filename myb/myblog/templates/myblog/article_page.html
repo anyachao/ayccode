@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>article_page.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  
+  <body>
+  	<h1>{{article.aid}}</h1>
+  	<br/>
+  	<h3>{{article.title}}</h3>
+  	<br/><br/>
+  	<a href="{% url 'myblog:edit_page' article.id %}">修改文章</a>
+  </body>
+</html>

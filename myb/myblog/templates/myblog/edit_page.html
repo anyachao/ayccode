@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>edit_page.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  
+  <body>
+  	<form action="{% url 'myblog:edit_action' %}" method="post">
+  		{% csrf_token %}
+   		{% if article %}
+<!--   			<input type="hidden" name="article_id" value="{{article.id | default:'0'}}"/>--> 
+  			<input type="hidden" name="article_id" value="{{article.id}}"/>
+  			<label>文章a埃地
+  				<input type="text" name="aid" value="{{article.aid}}"/>
+  			</label>
+  			<br/>
+  			<label>文章标题
+  				<input type="text" name="title" value="{{article.title}}"/>
+  			</label>
+  			<br/>
+    		{% else %}
+  			<input type="hidden" name="article_id" value="0"/>
+  			<label>文章a埃地
+  				<input type="text" name="aid"/>
+  			</label>
+  			<br/>
+  			<label>文章标题
+  				<input type="text" name="title"/>
+  			</label>
+  			<br/>
+  		{% endif %}
+
+  		<input type="submit">
+  	</form>
+  </body>
+</html>

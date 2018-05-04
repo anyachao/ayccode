@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>index.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+  </head>
+  
+  <body>
+    Django!!!!!!!!!! <br>
+    <h1>aid:{{article.aid}}</h1>
+    <h3>title:{{article.title}}</h3>
+    
+    <h1>
+    	<a href="{% url 'myblog:edit_page' 0 %}">新文章</a>
+    </h1>
+    {% for articledetail in article%}
+        <a href="{% url 'myblog:article_page' articledetail.id%}">{{articledetail.aid}}</a>
+        <br/>
+    {% endfor %}
+  </body>
+</html>
