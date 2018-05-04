@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="HNUST"
+  id="myeclipse.1509014899223"
+  context-root="/ust"
+  j2ee-spec="1.7"
+  archive="HNUST.war">
+  <attributes>
+    <attribute name="webrootdir" value="src/main/webapp" />
+  </attributes>
+</project-module>
+
