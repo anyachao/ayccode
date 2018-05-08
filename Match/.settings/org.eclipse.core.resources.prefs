@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+encoding//src/Myfile/filetest.py=utf-8
+encoding//src/decorator/mydecorator.py=utf-8
+encoding//src/matchTest/bs.py=utf-8
+encoding//src/matchTest/match.py=utf-8
+encoding//src/matchTest/myurls.py=utf-8
+encoding//src/spider/html_downloader.py=utf-8
+encoding//src/spider/html_outputer.py=utf-8
+encoding//src/spider/html_parser.py=utf-8
+encoding//src/spider/spider_main.py=utf-8
+encoding//src/spider/url_manager.py=utf-8
